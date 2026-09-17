@@ -1,31 +1,57 @@
-# Laboratorio README
+# Calculadora Web
+Proyecto en desarrollo
 
-Proyecto de práctica para aprender Markdown avanzado en GitHub.
+![Estado](https://img.shields.io/badge/version-1.0-blue)
 
 ## Descripción
 
-Este repositorio documenta paso a paso mi aprendizaje de Markdown:
-tablas, listas de tareas, badges y diagramas.
+Herramienta que permite hacer operaciones básicas matemáticas (sumar, restar, dividir, multiplicar) en el navegador.
 
-## Estado de funcionalidades
+
+## Tabla de contenidos
+- [Descripción](#descripción)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Contribuidores](#contribuidores)
+- [Funcionalidades](#funcionalidades)
+- [Tareas pendientes](#tareas-pendientes)
+- [Arquitectura](#arquitectura)
+
+## Instalación
  
-| Función  | Estado      |
-|----------|-------------|
-| Login    | Listo       |
-| Reportes | En progreso |
+```bash
+git clone https://github.com/katherin-ac/laboratorio-readme.git
+cd laboratorio-readme
+npm install
+```
 
-## Pendientes
- 
-- [x] Diseño de la base de datos
-- [ ] Pruebas unitarias
+## Uso
 
-![Estado](https://img.shields.io/badge/build-passing-brightgreen)
+```bash
+npm start
+```
+
+## Funcionalidades
+| Función | Estado |
+|---------|--------|
+|  Sumar  |  Listo |
+|  Restar |  Listo |
+|  Multiplicar | Listo |
+|  Dividir |  Listo |
+
+## Tareas pendientes
+- [ ] Implementar operaciones matemáticas avanzadas
+- [x] Añadir historial de operaciones
+- [x]  Diseño responsive
+- [ ] Implementar pantalla para gráficos
 
 ## Arquitectura
- 
+
 ```mermaid
 graph LR
-    A[Usuario] --> B[Frontend]
-    B --> C[API]
-    C --> D[(Base de datos)]
+    A[Usuario] --> B[Interfaz]
+    B --> C[Lógica JS]
+    C --> D[Resultado] 
 ```
+## Contribuidores
+- Katherin Arapa Catari ([@katherin-ac](https://github.com/katherin-ac))
